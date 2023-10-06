@@ -12,3 +12,22 @@ const neonGlory = target => target.innerHTML = flickerAndColorText(target.textCo
 
 neonGlory(target);
 target.onclick = () =>  neonGlory(target);
+
+function openPopup() {
+    document.getElementById("signupPopup").style.display = "flex";
+}
+
+function closePopup() {
+    document.getElementById("signupPopup").style.display = "none";
+}
+
+function redirectToSignup() {
+    var role = document.querySelector('input[name="role"]:checked').value;
+    
+    if (role === "supplier") {
+        window.location.href = "signup.html";
+    }
+    if(role=="manufacturer"){
+        window.location.href = "manufacturer_signup.html";
+    }
+}

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="login.css">
+    <script src="script.js"></script>
         
 </head>
 <body>
@@ -32,8 +33,28 @@
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" required>
             </div>
-            <button type="submit" class="btn-login">Login</button>
+            <div class="center-btn">
+                <button type="submit" class="btn-login">Login</button>
+            </div>
+            
+            <div class="signup-link">
+                <p >New to BlockVerify? <a href="javascript:void(O);"onclick="openPopup()">Sign up</a></p>
+            </div>
+
         </form>
     </div>
+    <div id="signupPopup" class="popup" >
+        <div class="popup-content">
+            <h2>Choose your role</h2>
+            <label>
+                <input type="radio" name="role" value="manufacturer"> Manufacturer
+            </label>
+            <label>
+                <input type="radio" name="role" value="supplier"> Supplier
+            </label>
+            <button onclick="redirectToSignup()">Submit</button>
+        </div>
+    </div>
+    
 </body>
 </html>
