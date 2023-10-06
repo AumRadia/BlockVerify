@@ -276,7 +276,7 @@ body, h1, h2, p, ul, li {
 
 /* Apply a gradient background to the entire page */
 body {
-    background: linear-gradient(135deg, #1e1e1e, #1d1d1d, #3b3b3b);
+    background: linear-gradient(135deg, #ffffff, #ffffff, #ffffff);
     background-size: contain;
     background-attachment: fixed;
 }
@@ -295,7 +295,7 @@ body {
     position: relative;
     display: inline-block;
     margin: 20px;
-    padding: 10px 20px;
+    padding: 100px 180px;
     background-color: #4973ff;
     color: #fff;
     font-size: 18px;
@@ -306,6 +306,12 @@ body {
     overflow: hidden;
     transition: 0.3s;
     text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
 }
 
 .btn span {
@@ -314,15 +320,15 @@ body {
 }
 
 .btn:hover .btn--liquidBtn--liquid {
-    top: -120px;
+    top: -250px;
 }
 
 .btn--liquidBtn--liquid {
     position: absolute;
-    top: -80px;
+    top: -100px;
     left: 0;
-    width: 200px;
-    height: 200px;
+    width: 360px;
+    height: 499px;
     background: #4973ff;
     box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
@@ -334,8 +340,8 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 200%;
-    height: 200%;
+    width: 240%;
+    height: 240%;
     transform: translate(-50%, -75%);
 }
 
@@ -353,13 +359,12 @@ body {
 
 @keyframes liquidAnimation {
     0% {
-        transform: translate(-50%, -75%) rotate(0deg);
+        transform: translate(-50%, -75%) rotate(0deg) ;
     }
     100% {
         transform: translate(-50%, -75%) rotate(360deg);
     }
 }
-
 
 .button-row {
     display: flex;
@@ -376,6 +381,11 @@ body {
     justify-content: center;
 }
 
+.btn span {
+    font-size: 38px; /* Adjust the font size as needed */
+}
+
+
 .btn-left .btn, .btn-center .btn, .btn-right .btn {
     width: 200px; /* Adjust the width as needed */
 }
@@ -390,9 +400,10 @@ body {
 }
 
 .welcome-text {
-    font-weight: 400;
-    font-size: 40px; /* Adjust the font size as needed */
+    font-weight: 0;
+    font-size: 45px; /* Adjust the font size as needed */
     text-align: center;
-    color: #fff; /* Set the text color to white or your preferred color */
+    color: #005aae; /* Set the text color to white or your preferred color */
     animation: text-flicker-in-glow 3.5s linear 1;;
 }
+
