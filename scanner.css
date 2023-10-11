@@ -1,0 +1,30 @@
+
+
+body {
+    background-color: #84bdf5; 
+    color: #4daff1; 
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+#reader {
+    width: 600px;
+    background-color: #ffffff; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px; 
+    overflow: hidden; 
+}
+
+#result {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    color: #3498db;
+}
+
+
